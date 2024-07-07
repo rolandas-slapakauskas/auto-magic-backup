@@ -53,9 +53,9 @@ def update_tray_tooltip():
         tray_icon.setToolTip("Application Running - No Backup Completed Yet")
 
 def job():
-    src_folder = r"C:\Users\newtr\Desktop\main"
+    src_folder = r"C:\your_backup_folder_path"
     current_time = datetime.now().strftime("%d-%m-%y_%H-%M-%S")  
-    dest_folder = os.path.join(r"D:\backup", current_time) 
+    dest_folder = os.path.join(r"D:\your\backup\destination_folder", current_time) 
     
     try:
         backup_folder(src_folder, dest_folder)
